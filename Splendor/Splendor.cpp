@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 class Cards {
@@ -151,10 +153,22 @@ public:
 	int getOnyxValue() {
 		return onyxValue;
 	}
+
+	int getVpTotal() {
+		return vpTotal;
+	}
 };
 
 int main() {
+	//deck randomizer
+	int deckOneMax = 40;
+	int deckTwoMax;
+	int deckThreeMax;
+	srand(time(0));
+
+	//initialize players
 	Player player1;
+	Player player2;
 
 	//level 1 cards
 	Cards L1Card1(0, 1, 1, 0, 1, 1, "Diamond");
@@ -235,5 +249,18 @@ int main() {
 	vector<Token> emeraldDeck { tokenE1, tokenE2, tokenE3, tokenE4 };
 	vector<Token> onyxDeck{ tokenO1, tokenO2, tokenO3, tokenO4 };
 
-	//cout << "Level: " << card1.getLevel() << endl << "Cost: " << card1.getCostName() << endl << "Points: " << card1.getVpValue() << endl << "Cost Value: " << card1.getCostValue();
+	//begin game
+	cout << "Welcome to Jacob's Splendor 2-player game! I hope you enjoy." << endl << endl;
+
+	for (int i = 0; i < 4; i++) {
+		cout << "Random Numer: " << rand() % deckOneMax << endl;
+	}
+
+	//player1.setVpTotal(22);
+	//player2.setVpTotal(2);
+
+	//do {
+	//	cout << "Level 1 Cards: ";
+
+	//} while (player1.getVpTotal() < 21 && player2.getVpTotal() < 21);
 }
