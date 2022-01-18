@@ -1,5 +1,6 @@
 //Splendor game ATTEMPTED to be made into a c++ program
 #include <iostream>
+#include <iomanip>
 #include <vector>
 #include <string>
 #include <cstdlib>
@@ -160,10 +161,13 @@ public:
 };
 
 int main() {
+
 	//deck randomizer
 	int deckOneMax = 40;
 	int deckTwoMax;
 	int deckThreeMax;
+
+	//seed for randomizer
 	srand(time(0));
 
 	//initialize players
@@ -242,7 +246,11 @@ int main() {
 	Token tokenO3("Onyx");
 	Token tokenO4("Onyx");
 	
-	vector<Cards> levelOneDeck{ L1Card1,L1Card2,L1Card3,L1Card4,L1Card5,L1Card6,L1Card7,L1Card8,L1Card9,L1Card10,L1Card11,L1Card12,L1Card13,L1Card14,L1Card15,L1Card16,L1Card17,L1Card18,L1Card19,L1Card20,L1Card21,L1Card22,L1Card23,L1Card24,L1Card25,L1Card26,L1Card27,L1Card28,L1Card29,L1Card30,L1Card31,L1Card32,L1Card33,L1Card34,L1Card35,L1Card36,L1Card37,L1Card38,L1Card39,L1Card40 };
+	//card decks 
+	vector<Cards> levelOneDeck { L1Card1,L1Card2,L1Card3,L1Card4,L1Card5,L1Card6,L1Card7,L1Card8,L1Card9,L1Card10,L1Card11,L1Card12,L1Card13,L1Card14,L1Card15,L1Card16,L1Card17,L1Card18,L1Card19,L1Card20,L1Card21,L1Card22,L1Card23,L1Card24,L1Card25,L1Card26,L1Card27,L1Card28,L1Card29,L1Card30,L1Card31,L1Card32,L1Card33,L1Card34,L1Card35,L1Card36,L1Card37,L1Card38,L1Card39,L1Card40 };
+	vector<Cards> fieldOne;
+
+	//gem decks
 	vector<Token> rubyDeck { tokenR1, tokenR2, tokenR3, tokenR4 };
 	vector<Token> saphireDeck { tokenS1, tokenS2, tokenS3, tokenS4 };
 	vector<Token> diamondDeck { tokenD1, tokenD2, tokenD3, tokenD4 };
@@ -252,10 +260,38 @@ int main() {
 	//begin game
 	cout << "Welcome to Jacob's Splendor 2-player game! I hope you enjoy." << endl << endl;
 
+	//draw 4 random cards and place them into field one.
 	for (int i = 0; i < 4; i++) {
-		cout << "Random Numer: " << rand() % deckOneMax << endl;
+		int random = rand() % deckOneMax;
+		fieldOne.push_back(levelOneDeck[random]);
+
+		levelOneDeck.erase(levelOneDeck.begin() + random);
+		deckOneMax--;
 	}
 
+	//display field one
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << "Ruby: " << fieldOne[i].getRubyCost() << setw(20);
+	}
+	cout << endl << setw(0);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << "Saphire: " << fieldOne[i].getSaphireCost() << setw(20);
+	}
+	cout << endl << setw(0);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << "Emerald: " << fieldOne[i].getEmeraldCost() << setw(20);
+	}
+	cout << endl << setw(0);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << "Diamond: " << fieldOne[i].getDiamondCost() << setw(20);
+	}
+	cout << endl << setw(0);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << "Onyx: " << fieldOne[i].getOnyxCost() << setw(20);
+	}
+
+	//cout << left << "Card Number: " << 1;
+	//cout << "Current Deck Size: " << levelOneDeck.size();
 	//player1.setVpTotal(22);
 	//player2.setVpTotal(2);
 

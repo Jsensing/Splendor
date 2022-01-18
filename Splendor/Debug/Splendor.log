@@ -1,5 +1,10 @@
 ﻿  Splendor.cpp
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(167,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(166,6): warning C4101: 'deckThreeMax': unreferenced local variable
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(165,6): warning C4101: 'deckTwoMax': unreferenced local variable
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(171,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(273,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(277,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(281,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(285,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(289,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(168,6): warning C4101: 'deckThreeMax': unreferenced local variable
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(167,6): warning C4101: 'deckTwoMax': unreferenced local variable
   Splendor.vcxproj -> C:\Users\wrait\OneDrive\Desktop\Splendor\Debug\Splendor.exe
