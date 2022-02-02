@@ -1,22 +1,27 @@
 ﻿  Splendor.cpp
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(171,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(352,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(357,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(362,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(367,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(372,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(377,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(384,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(389,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(394,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(399,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(404,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(409,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(416,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(421,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(426,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(431,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(436,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(441,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(447,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(239,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(445,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(450,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(455,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(460,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(465,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(470,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(477,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(482,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(487,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(492,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(497,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(502,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(509,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(514,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(519,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(524,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(529,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(534,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(541,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(546,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(551,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(556,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(561,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(567,20): warning C4018: '<': signed/unsigned mismatch
   Splendor.vcxproj -> C:\Users\wrait\OneDrive\Desktop\Splendor\Debug\Splendor.exe

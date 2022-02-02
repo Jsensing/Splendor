@@ -12,15 +12,15 @@ private:
 	string gemGiven;
 	int vpValue = 0;
 	int rubyCost = 0;
-	int saphireCost = 0;
+	int sapphireCost = 0;
 	int diamondCost = 0;
 	int emeraldCost = 0;
 	int onyxCost = 0;
 public:
-	Cards(int vpValue, int rubyCost, int saphireCost, int diamondCost, int emeraldCost, int onyxCost, string gemGiven) {
+	Cards(int vpValue, int rubyCost, int sapphireCost, int diamondCost, int emeraldCost, int onyxCost, string gemGiven) {
 		this->vpValue = vpValue;
 		this->rubyCost = rubyCost;
-		this->saphireCost = saphireCost;
+		this->sapphireCost = sapphireCost;
 		this->diamondCost = diamondCost;
 		this->emeraldCost = emeraldCost;
 		this->onyxCost = onyxCost;
@@ -36,7 +36,7 @@ public:
 	}
 
 	int getSaphireCost() {
-		return saphireCost;
+		return sapphireCost;
 	}
 
 	int getDiamondCost() {
@@ -56,7 +56,7 @@ public:
 	}
 
 	void setSaphireCost(int value) {
-		this->saphireCost += value;
+		this->sapphireCost += value;
 	}
 
 	void setDiamondCost(int value) {
@@ -160,12 +160,80 @@ public:
 	}
 };
 
+class Noble {
+private:
+	int vpValue = 0;
+	int rubyCost = 0;
+	int sapphireCost = 0;
+	int diamondCost = 0;
+	int emeraldCost = 0;
+	int onyxCost = 0;
+public:
+	Noble(int vpValue, int rubyCost, int sapphireCost, int diamondCost, int emeraldCost, int onyxCost) {
+		this->vpValue = vpValue;
+		this->rubyCost = rubyCost;
+		this->sapphireCost = sapphireCost;
+		this->diamondCost = diamondCost;
+		this->emeraldCost = emeraldCost;
+		this->onyxCost = onyxCost;
+	}
+
+	int getVpValue() {
+		return vpValue;
+	}
+
+	int getRubyCost() {
+		return rubyCost;
+	}
+
+	int getSapphireCost() {
+		return sapphireCost;
+	}
+
+	int getDiamondCost() {
+		return diamondCost;
+	}
+
+	int getEmeraldCost() {
+		return emeraldCost;
+	}
+
+	int getOnyxCost() {
+		return onyxCost;
+	}
+
+	void setVpValue(int vpValue) {
+		this->vpValue += vpValue;
+	}
+
+	void setRubyCost(int rubyCost) {
+		this->rubyCost += rubyCost;
+	}
+
+	void setSaphireCost(int sapphireCost) {
+		this->sapphireCost += sapphireCost;
+	}
+
+	void setDiamondCost(int diamondCost) {
+		this->diamondCost += diamondCost;
+	}
+
+	void setEmeraldCost(int emeraldCost) {
+		this->emeraldCost += emeraldCost;
+	}
+
+	void setOnyxCost(int onyxCost) {
+		this->onyxCost += onyxCost;
+	}
+};
+
 int main() {
 
 	//deck randomizer
 	int deckOneMax = 40;
 	int deckTwoMax = 30;
 	int deckThreeMax = 20;
+	int nobleMax = 10;
 
 	//seed for randomizer
 	srand(time(0));
@@ -173,6 +241,18 @@ int main() {
 	//initialize players
 	Player player1;
 	Player player2;
+
+	//nobles
+	Noble noble1(3, 3, 0, 3, 0, 3);
+	Noble noble2(3, 3, 3, 0, 3, 0);
+	Noble noble3(3, 4, 0, 0, 0, 4);
+	Noble noble4(3, 3, 0, 0, 3, 3);
+	Noble noble5(3, 4, 0, 0, 4, 0);
+	Noble noble6(3, 0, 4, 0, 4, 0);
+	Noble noble7(3, 0, 3, 3, 3, 0);
+	Noble noble8(3, 0, 0, 4, 0, 4);
+	Noble noble9(3, 0, 4, 4, 0, 0);
+	Noble noble10(3, 0, 3, 3, 0, 0);
 
 	//level 1 cards
 	Cards L1Card1(0, 1, 1, 0, 1, 1, "Diamond");
@@ -300,6 +380,10 @@ int main() {
 	Token tokenO2("Onyx");
 	Token tokenO3("Onyx");
 	Token tokenO4("Onyx");
+
+	//noble deck
+	vector<Noble> nobleDeck{ noble1,noble2,noble3,noble4,noble5,noble6,noble7,noble8,noble9,noble10 };
+	vector<Noble> nobleField;
 	
 	//card decks 
 	vector<Cards> levelOneDeck { L1Card1,L1Card2,L1Card3,L1Card4,L1Card5,L1Card6,L1Card7,L1Card8,L1Card9,L1Card10,L1Card11,L1Card12,L1Card13,L1Card14,L1Card15,L1Card16,L1Card17,L1Card18,L1Card19,L1Card20,L1Card21,L1Card22,L1Card23,L1Card24,L1Card25,L1Card26,L1Card27,L1Card28,L1Card29,L1Card30,L1Card31,L1Card32,L1Card33,L1Card34,L1Card35,L1Card36,L1Card37,L1Card38,L1Card39,L1Card40 };
@@ -344,6 +428,15 @@ int main() {
 
 		levelThreeDeck.erase(levelThreeDeck.begin() + random);
 		deckThreeMax--;
+	}
+
+	//draw 3 random nobles
+	for (int i = 0; i < 3; i++) {
+		int random = rand() % nobleMax;
+		nobleField.push_back(nobleDeck[random]);
+
+		nobleDeck.erase(nobleDeck.begin() + random);
+		nobleMax--;
 	}
 
 	//display field one
@@ -440,6 +533,33 @@ int main() {
 
 	for (int i = 0; i < fieldThree.size(); i++) {
 		cout << right << "Onyx: " << fieldThree[i].getOnyxCost() << setw(25);
+	}
+
+	//display nobles
+	cout << endl << endl << setw(0) << "Nobles: " << endl << endl;
+
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << "Ruby: " << nobleField[i].getRubyCost() << right << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "Sapphire: " << nobleField[i].getSapphireCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "Emerald: " << nobleField[i].getEmeraldCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "Diamond: " << nobleField[i].getDiamondCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "Onyx: " << nobleField[i].getOnyxCost() << setw(25);
 	}
 
 	//show card placement on the field
