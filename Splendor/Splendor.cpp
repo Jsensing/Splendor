@@ -440,7 +440,7 @@ int main() {
 	}
 
 	//display field one
-	cout << "Level 1 Cards: " << endl << endl;
+	cout << "//////////////////////////////////Level 1 Cards///////////////////////////////////////////////////// " << endl << endl;
 
 	for (int i = 0; i < fieldOne.size(); i++) {
 		cout << "Name: " << fieldOne[i].getGemGiven() << setw(20);
@@ -472,7 +472,7 @@ int main() {
 	}
 
 	//diplay field two
-	cout << endl << endl << setw(0) << "Level 2 Cards: " << endl << endl;
+	cout << endl << endl << setw(0) << "//////////////////////////////////Level 2 Cards///////////////////////////////////////////////////// " << endl << endl;
 
 	for (int i = 0; i < fieldTwo.size(); i++) {
 		cout << "Name: " << fieldTwo[i].getGemGiven() << setw(20);
@@ -504,7 +504,7 @@ int main() {
 	}
 
 	//display field 3
-	cout << endl << endl << setw(0) << "Level 3 Cards: " << endl << endl;
+	cout << endl << endl << setw(0) << "//////////////////////////////////Level 3 Cards/////////////////////////////////////////////////////" << endl << endl;
 
 	for (int i = 0; i < fieldThree.size(); i++) {
 		cout << "Name: " << fieldThree[i].getGemGiven() << setw(20);
@@ -536,7 +536,7 @@ int main() {
 	}
 
 	//display nobles
-	cout << endl << endl << setw(0) << "Nobles: " << endl << endl;
+	cout << endl << endl << setw(0) << "//////////////////////////////////Nobles////////////////////////////////////////////////////////////" << endl << endl;
 
 	for (int i = 0; i < nobleField.size(); i++) {
 		cout << "Ruby: " << nobleField[i].getRubyCost() << right << setw(25);
@@ -568,13 +568,7 @@ int main() {
 		cout << "Card " << i + 1 << setw(25);
 	}
 
-	//cout << left << "Card Number: " << 1;
-	//cout << "Current Deck Size: " << levelOneDeck.size();
-	//player1.setVpTotal(22);
-	//player2.setVpTotal(2);
-
 	//do {
-	//	cout << "Level 1 Cards: ";
 
 	//} while (player1.getVpTotal() < 21 && player2.getVpTotal() < 21);
 }
