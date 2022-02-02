@@ -164,7 +164,7 @@ int main() {
 
 	//deck randomizer
 	int deckOneMax = 40;
-	int deckTwoMax;
+	int deckTwoMax = 30;
 	int deckThreeMax;
 
 	//seed for randomizer
@@ -193,28 +193,61 @@ int main() {
 	Cards L1Card16(0, 1, 1, 1, 1, 0, "Onyx");
 	Cards L1Card17(0, 2, 0, 2, 0, 0, "Ruby");
 	Cards L1Card18(0, 0, 3, 0, 0, 0, "Diamond");
-	Cards L1Card19(0, 2, 0, 1, 1, 1, "Saphire");
+	Cards L1Card19(0, 2, 0, 1, 1, 1, "Sapphire");
 	Cards L1Card20(0, 2, 0, 0, 0, 1, "Diamond");
 	Cards L1Card21(0, 1, 1, 1, 0, 1, "Emerald");
 	Cards L1Card22(0, 1, 0, 0, 2, 0, "Onyx");
-	Cards L1Card23(1, 4, 0, 0, 0, 0, "Saphire");
-	Cards L1Card24(0, 0, 0, 0, 2, 2, "Saphire");
+	Cards L1Card23(1, 4, 0, 0, 0, 0, "Sapphire");
+	Cards L1Card24(0, 0, 0, 0, 2, 2, "Sapphire");
 	Cards L1Card25(1, 0, 4, 0, 0, 0, "Onyx");
 	Cards L1Card26(0, 1, 0, 1, 0, 3, "Ruby");
-	Cards L1Card27(0, 1, 1, 0, 3, 0, "Saphire");
+	Cards L1Card27(0, 1, 1, 0, 3, 0, "Sapphire");
 	Cards L1Card28(0, 0, 0, 3, 0, 0, "Ruby");
 	Cards L1Card29(0, 2, 2, 0, 0, 0, "Emerald");
 	Cards L1Card30(0, 0, 2, 3, 0, 1, "Diamond");
-	Cards L1Card31(0, 2, 0, 1, 2, 0, "Saphire");
+	Cards L1Card31(0, 2, 0, 1, 2, 0, "Sapphire");
 	Cards L1Card32(0, 3, 0, 0, 0, 0, "Emerald");
 	Cards L1Card33(0, 0, 1, 2, 0, 0, "Emerald");
-	Cards L1Card34(0, 0, 0, 1, 0, 2, "Saphire");
+	Cards L1Card34(0, 0, 0, 1, 0, 2, "Sapphire");
 	Cards L1Card35(0, 1, 1, 0, 2, 1, "Diamond");
-	Cards L1Card36(0, 0, 0, 0, 0, 3, "Saphire");
-	Cards L1Card37(0, 1, 0, 1, 1, 1, "Saphire");
+	Cards L1Card36(0, 0, 0, 0, 0, 3, "Sapphire");
+	Cards L1Card37(0, 1, 0, 1, 1, 1, "Sapphire");
 	Cards L1Card38(0, 0, 2, 0, 1, 0, "Ruby");
 	Cards L1Card39(1, 0, 0, 4, 0, 0, "Ruby");
 	Cards L1Card40(0, 0, 1, 2, 1, 1, "Ruby");
+
+	//level 2 cards
+	Cards L2Card1(2, 1, 0, 2, 0, 4, "Sapphire");
+	Cards L2Card2(1, 3, 2, 0, 2, 0, "Sapphire");
+	Cards L2Card3(1, 2, 3, 0, 0, 3, "Ruby");
+	Cards L2Card4(1, 2, 0, 0, 3, 2, "Diamond");
+	Cards L2Card5(1, 0, 2, 0, 3, 3, "Sapphire");
+	Cards L2Card6(2, 4, 0, 0, 1, 2, "Diamond");
+	Cards L2Card7(2, 0, 5, 0, 3, 0, "Emerald");
+	Cards L2Card8(2, 0, 3, 5, 0, 0, "Sapphire");
+	Cards L2Card9(2, 2, 1, 0, 4, 0, "Onyx");
+	Cards L2Card10(2, 0, 4, 1, 2, 0, "Ruby");
+	Cards L2Card11(2, 5, 0, 0, 0, 3, "Diamond");
+	Cards L2Card12(2, 0, 0, 5, 0, 0, "Onyx");
+	Cards L2Card13(3, 0, 0, 0, 6, 0, "Emerald");
+	Cards L2Card14(3, 0, 0, 0, 0, 6, "Onyx");
+	Cards L2Card15(2, 0, 0, 3, 0, 5, "Ruby");
+	Cards L2Card16(1, 0, 3, 2, 0, 2, "Emerald");
+	Cards L2Card17(2, 0, 2, 4, 0, 1, "Emerald");
+	Cards L2Card18(3, 0, 0, 6, 0, 0, "Diamond");
+	Cards L2Card19(2, 0, 0, 0, 5, 0, "Emerald");
+	Cards L2Card20(2, 5, 0, 0, 0, 0, "Diamond");
+	Cards L2Card21(1, 0, 2, 3, 2, 0, "Onyx");
+	Cards L2Card22(2, 0, 5, 0, 0, 0, "Sapphire");
+	Cards L2Card23(1, 3, 3, 2, 0, 0, "Diamond");
+	Cards L2Card24(3, 0, 6, 0, 0, 0, "Sapphire");
+	Cards L2Card25(2, 0, 0, 0, 0, 5, "Ruby");
+	Cards L2Card26(3, 6, 0, 0, 0, 0, "Ruby");
+	Cards L2Card27(1, 0, 0, 3, 3, 2, "Onyx");
+	Cards L2Card28(1, 2, 0, 2, 0, 3, "Ruby");
+	Cards L2Card29(1, 3, 0, 3, 2, 0, "Emerald");
+	Cards L2Card30(2, 3, 0, 0, 5, 0, "Onyx");
+
 
 	//ruby tokens
 	Token tokenR1("Ruby");
@@ -223,10 +256,10 @@ int main() {
 	Token tokenR4("Ruby");
 
 	//saphire tokens
-	Token tokenS1("Saphire");
-	Token tokenS2("Saphire");
-	Token tokenS3("Saphire");
-	Token tokenS4("Saphire");
+	Token tokenS1("Sapphire");
+	Token tokenS2("Sapphire");
+	Token tokenS3("Sapphire");
+	Token tokenS4("Sapphire");
 
 	//diamond tokens
 	Token tokenD1("Diamond");
@@ -249,6 +282,8 @@ int main() {
 	//card decks 
 	vector<Cards> levelOneDeck { L1Card1,L1Card2,L1Card3,L1Card4,L1Card5,L1Card6,L1Card7,L1Card8,L1Card9,L1Card10,L1Card11,L1Card12,L1Card13,L1Card14,L1Card15,L1Card16,L1Card17,L1Card18,L1Card19,L1Card20,L1Card21,L1Card22,L1Card23,L1Card24,L1Card25,L1Card26,L1Card27,L1Card28,L1Card29,L1Card30,L1Card31,L1Card32,L1Card33,L1Card34,L1Card35,L1Card36,L1Card37,L1Card38,L1Card39,L1Card40 };
 	vector<Cards> fieldOne;
+	vector<Cards> levelTwoDeck{ L2Card1,L2Card2,L2Card3,L2Card4,L2Card5,L2Card6,L2Card7,L2Card8,L2Card9,L2Card10,L2Card11,L2Card12,L2Card13,L2Card14,L2Card15,L2Card16,L2Card17,L2Card18,L2Card19,L2Card20,L2Card21,L2Card22,L2Card23,L2Card24,L2Card25,L2Card26,L2Card27,L2Card28,L2Card29,L2Card30 };
+	vector<Cards> fieldTwo;
 
 	//gem decks
 	vector<Token> rubyDeck { tokenR1, tokenR2, tokenR3, tokenR4 };
@@ -260,7 +295,7 @@ int main() {
 	//begin game
 	cout << "Welcome to Jacob's Splendor 2-player game! I hope you enjoy." << endl << endl;
 
-	//draw 4 random cards and place them into field one.
+	//draw 4 random level one cards and place them into field one.
 	for (int i = 0; i < 4; i++) {
 		int random = rand() % deckOneMax;
 		fieldOne.push_back(levelOneDeck[random]);
@@ -269,25 +304,83 @@ int main() {
 		deckOneMax--;
 	}
 
+	//draw 4 random level 2 cards and place them into the field two
+	for (int i = 0; i < 4; i++) {
+		int random = rand() % deckTwoMax;
+		fieldTwo.push_back(levelTwoDeck[random]);
+
+		levelTwoDeck.erase(levelTwoDeck.begin() + random);
+		deckTwoMax--;
+	}
+
 	//display field one
+	cout << "Level 1 Cards: " << endl << endl;
+
 	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << "Ruby: " << fieldOne[i].getRubyCost() << setw(20);
+		cout << "Name: " << fieldOne[i].getGemGiven() << setw(20);
 	}
 	cout << endl << setw(0);
+
 	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << "Saphire: " << fieldOne[i].getSaphireCost() << setw(20);
+		cout << "Ruby: " << fieldOne[i].getRubyCost() << right << setw(25);
 	}
 	cout << endl << setw(0);
+
 	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << "Emerald: " << fieldOne[i].getEmeraldCost() << setw(20);
+		cout << right << "Sapphire: " << fieldOne[i].getSaphireCost() << setw(25);
 	}
 	cout << endl << setw(0);
+
 	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << "Diamond: " << fieldOne[i].getDiamondCost() << setw(20);
+		cout << right << "Emerald: " << fieldOne[i].getEmeraldCost() << setw(25);
 	}
 	cout << endl << setw(0);
+
 	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << "Onyx: " << fieldOne[i].getOnyxCost() << setw(20);
+		cout << right << "Diamond: " << fieldOne[i].getDiamondCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << right << "Onyx: " << fieldOne[i].getOnyxCost() << setw(25);
+	}
+
+	//diplay field two
+	cout << endl << endl << setw(0) << "Level 2 Cards: " << endl << endl;
+
+	for (int i = 0; i < fieldTwo.size(); i++) {
+		cout << "Name: " << fieldTwo[i].getGemGiven() << setw(20);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldTwo.size(); i++) {
+		cout << "Ruby: " << fieldTwo[i].getRubyCost() << right << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldTwo.size(); i++) {
+		cout << right << "Sapphire: " << fieldTwo[i].getSaphireCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldTwo.size(); i++) {
+		cout << right << "Emerald: " << fieldTwo[i].getEmeraldCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldTwo.size(); i++) {
+		cout << right << "Diamond: " << fieldTwo[i].getDiamondCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldTwo.size(); i++) {
+		cout << right << "Onyx: " << fieldTwo[i].getOnyxCost() << setw(25);
+	}
+
+	//show card placement on the field
+	cout << setw(0) << endl << endl;
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << "Card " << i + 1 << setw(25);
 	}
 
 	//cout << left << "Card Number: " << 1;
