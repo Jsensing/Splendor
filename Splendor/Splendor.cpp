@@ -413,7 +413,7 @@ int main() {
 	vector<Token> onyxDeck{ tokenO1, tokenO2, tokenO3, tokenO4 };
 
 	//begin game
-	cout << "Welcome to Jacob's Splendor 2-player game! I hope you enjoy." << endl << endl;
+	cout << "Welcome to Jacob's 2-player Splendor game! I hope you enjoy." << endl << endl;
 
 	//draw 4 random level one cards and place them into field one.
 	for (int i = 0; i < 4; i++) {
@@ -615,6 +615,7 @@ int main() {
 	cout << endl << "Player 2 please enter your name: " << endl;
 	getline(cin, p2Name);
 	player2.setName(p2Name);
+	cout << endl;
 
 	do {
 		cout << player1.getName() << " Please select an action:" << endl << endl;
@@ -627,7 +628,9 @@ int main() {
 		switch (choice) {
 		//choice 1, selecting 3 gems of different colors.
 		case 1:
-
+			cout << player1.getName() << " please select your First gem: ";
+			cout << endl << player1.getName() << " please select your Second gem: ";
+			cout << endl << player1.getName() << " please select your Third gem: ";
 		}
 
 	} while (player1.getVpTotal() < 15 && player2.getVpTotal() < 15);
