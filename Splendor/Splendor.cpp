@@ -92,6 +92,7 @@ public:
 
 class Player {
 private:
+	string name;
 	int vpTotal;
 	int rubyValue;
 	int saphireValue;
@@ -133,6 +134,14 @@ public:
 
 	void setVpTotal(int value) {
 		this->vpTotal += value;
+	}
+
+	void setName(string name) {
+		this->name = name;
+	}
+
+	string getName() {
+		return name;
 	}
 
 	int getRubyValue() {
@@ -239,8 +248,11 @@ int main() {
 	srand(time(0));
 
 	//initialize players
+	string p1Name;
+	string p2Name;
 	Player player1;
 	Player player2;
+	int choice;
 
 	//nobles
 	Noble noble1(3, 3, 0, 3, 0, 3);
@@ -594,7 +606,29 @@ int main() {
 		cout << "Card " << i + 1 << setw(25);
 	}
 
-	//do {
+	//get player 1's name
+	cout << endl << endl << "Player 1 please enter your name: " << endl;
+	getline(cin, p1Name);
+	player1.setName(p1Name);
 
-	//} while (player1.getVpTotal() < 21 && player2.getVpTotal() < 21);
+	//get player 2's name
+	cout << endl << "Player 2 please enter your name: " << endl;
+	getline(cin, p2Name);
+	player2.setName(p2Name);
+
+	do {
+		cout << player1.getName() << " Please select an action:" << endl << endl;
+		cout << "1. Take 3 gem tokens of different colors." << endl;
+		cout << "2. Take 2 gems of the same color." << endl;
+		cout << "3. Reserve 1 card and take 1 wild token." << endl;
+		cout << "4. Purchase 1 face-up card." << endl;
+		cin >> choice;
+
+		switch (choice) {
+		//choice 1, selecting 3 gems of different colors.
+		case 1:
+
+		}
+
+	} while (player1.getVpTotal() < 15 && player2.getVpTotal() < 15);
 }
