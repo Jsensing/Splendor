@@ -470,6 +470,13 @@ int main() {
 	for (int i = 0; i < fieldOne.size(); i++) {
 		cout << right << "Onyx: " << fieldOne[i].getOnyxCost() << setw(25);
 	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldOne.size(); i++) {
+		if (fieldOne[i].getVpValue() > 0) {
+			cout << right << "VP: " << fieldOne[i].getVpValue() << setw(25);
+		}
+	}
 
 	//diplay field two
 	cout << endl << endl << setw(0) << "//////////////////////////////////Level 2 Cards///////////////////////////////////////////////////// " << endl << endl;
@@ -501,6 +508,13 @@ int main() {
 
 	for (int i = 0; i < fieldTwo.size(); i++) {
 		cout << right << "Onyx: " << fieldTwo[i].getOnyxCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldTwo.size(); i++) {
+		if (fieldTwo[i].getVpValue() > 0) {
+			cout << right << "VP: " << fieldTwo[i].getVpValue() << setw(25);
+		}
 	}
 
 	//display field 3
@@ -534,6 +548,13 @@ int main() {
 	for (int i = 0; i < fieldThree.size(); i++) {
 		cout << right << "Onyx: " << fieldThree[i].getOnyxCost() << setw(25);
 	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldThree.size(); i++) {
+		if (fieldThree[i].getVpValue() > 0) {
+			cout << right << "VP: " << fieldThree[i].getVpValue() << setw(25);
+		}
+	}
 
 	//display nobles
 	cout << endl << endl << setw(0) << "//////////////////////////////////Nobles////////////////////////////////////////////////////////////" << endl << endl;
@@ -560,6 +581,11 @@ int main() {
 
 	for (int i = 0; i < nobleField.size(); i++) {
 		cout << right << "Onyx: " << nobleField[i].getOnyxCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "VP: " << nobleField[i].getVpValue() << setw(25);
 	}
 
 	//show card placement on the field
