@@ -167,6 +167,16 @@ public:
 	int getVpTotal() {
 		return vpTotal;
 	}
+
+	void setTokenHand(Token gem) {
+		tokenHand.push_back(gem);
+	}
+
+	int getHandSize() {
+		return tokenHand.size();
+	}
+
+
 };
 
 class Noble {
@@ -253,6 +263,10 @@ int main() {
 	Player player1;
 	Player player2;
 	int choice;
+
+	//Select 3 gems choices
+	int gem;
+	int gemCounter = 0;
 
 	//nobles
 	Noble noble1(3, 3, 0, 3, 0, 3);
@@ -451,42 +465,75 @@ int main() {
 		nobleMax--;
 	}
 
-	//display field one
-	cout << "//////////////////////////////////Level 1 Cards///////////////////////////////////////////////////// " << endl << endl;
+	//display nobles
+	cout << endl << endl << setw(0) << "//////////////////////////////////Nobles////////////////////////////////////////////////////////////" << endl << endl;
 
-	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << "Name: " << fieldOne[i].getGemGiven() << setw(20);
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << "Ruby: " << nobleField[i].getRubyCost() << right << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << "Ruby: " << fieldOne[i].getRubyCost() << right << setw(25);
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "Sapphire: " << nobleField[i].getSapphireCost() << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << right << "Sapphire: " << fieldOne[i].getSaphireCost() << setw(25);
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "Emerald: " << nobleField[i].getEmeraldCost() << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << right << "Emerald: " << fieldOne[i].getEmeraldCost() << setw(25);
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "Diamond: " << nobleField[i].getDiamondCost() << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << right << "Diamond: " << fieldOne[i].getDiamondCost() << setw(25);
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "Onyx: " << nobleField[i].getOnyxCost() << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldOne.size(); i++) {
-		cout << right << "Onyx: " << fieldOne[i].getOnyxCost() << setw(25);
+	for (int i = 0; i < nobleField.size(); i++) {
+		cout << right << "VP: " << nobleField[i].getVpValue() << setw(25);
+	}
+	cout << endl << endl << setw(0);
+
+	//display field 3
+	cout << endl << endl << setw(0) << "//////////////////////////////////Level 3 Cards/////////////////////////////////////////////////////" << endl << endl;
+
+	for (int i = 0; i < fieldThree.size(); i++) {
+		cout << "Name: " << fieldThree[i].getGemGiven() << setw(20);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldOne.size(); i++) {
-		if (fieldOne[i].getVpValue() > 0) {
-			cout << right << "VP: " << fieldOne[i].getVpValue() << setw(25);
+	for (int i = 0; i < fieldThree.size(); i++) {
+		cout << "Ruby: " << fieldThree[i].getRubyCost() << right << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldThree.size(); i++) {
+		cout << right << "Sapphire: " << fieldThree[i].getSaphireCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldThree.size(); i++) {
+		cout << right << "Emerald: " << fieldThree[i].getEmeraldCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldThree.size(); i++) {
+		cout << right << "Diamond: " << fieldThree[i].getDiamondCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldThree.size(); i++) {
+		cout << right << "Onyx: " << fieldThree[i].getOnyxCost() << setw(25);
+	}
+	cout << endl << setw(0);
+
+	for (int i = 0; i < fieldThree.size(); i++) {
+		if (fieldThree[i].getVpValue() > 0) {
+			cout << right << "VP: " << fieldThree[i].getVpValue() << setw(25);
 		}
 	}
 
@@ -529,88 +576,65 @@ int main() {
 		}
 	}
 
-	//display field 3
-	cout << endl << endl << setw(0) << "//////////////////////////////////Level 3 Cards/////////////////////////////////////////////////////" << endl << endl;
+	//display field one
+	cout << endl << endl << setw(0) << "//////////////////////////////////Level 1 Cards///////////////////////////////////////////////////// " << endl << endl;
 
-	for (int i = 0; i < fieldThree.size(); i++) {
-		cout << "Name: " << fieldThree[i].getGemGiven() << setw(20);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << "Name: " << fieldOne[i].getGemGiven() << setw(20);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldThree.size(); i++) {
-		cout << "Ruby: " << fieldThree[i].getRubyCost() << right << setw(25);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << "Ruby: " << fieldOne[i].getRubyCost() << right << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldThree.size(); i++) {
-		cout << right << "Sapphire: " << fieldThree[i].getSaphireCost() << setw(25);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << right << "Sapphire: " << fieldOne[i].getSaphireCost() << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldThree.size(); i++) {
-		cout << right << "Emerald: " << fieldThree[i].getEmeraldCost() << setw(25);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << right << "Emerald: " << fieldOne[i].getEmeraldCost() << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldThree.size(); i++) {
-		cout << right << "Diamond: " << fieldThree[i].getDiamondCost() << setw(25);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << right << "Diamond: " << fieldOne[i].getDiamondCost() << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldThree.size(); i++) {
-		cout << right << "Onyx: " << fieldThree[i].getOnyxCost() << setw(25);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		cout << right << "Onyx: " << fieldOne[i].getOnyxCost() << setw(25);
 	}
 	cout << endl << setw(0);
 
-	for (int i = 0; i < fieldThree.size(); i++) {
-		if (fieldThree[i].getVpValue() > 0) {
-			cout << right << "VP: " << fieldThree[i].getVpValue() << setw(25);
+	for (int i = 0; i < fieldOne.size(); i++) {
+		if (fieldOne[i].getVpValue() > 0) {
+			cout << right << "VP: " << fieldOne[i].getVpValue() << setw(25);
 		}
 	}
 
-	//display nobles
-	cout << endl << endl << setw(0) << "//////////////////////////////////Nobles////////////////////////////////////////////////////////////" << endl << endl;
-
-	for (int i = 0; i < nobleField.size(); i++) {
-		cout << "Ruby: " << nobleField[i].getRubyCost() << right << setw(25);
-	}
-	cout << endl << setw(0);
-
-	for (int i = 0; i < nobleField.size(); i++) {
-		cout << right << "Sapphire: " << nobleField[i].getSapphireCost() << setw(25);
-	}
-	cout << endl << setw(0);
-
-	for (int i = 0; i < nobleField.size(); i++) {
-		cout << right << "Emerald: " << nobleField[i].getEmeraldCost() << setw(25);
-	}
-	cout << endl << setw(0);
-
-	for (int i = 0; i < nobleField.size(); i++) {
-		cout << right << "Diamond: " << nobleField[i].getDiamondCost() << setw(25);
-	}
-	cout << endl << setw(0);
-
-	for (int i = 0; i < nobleField.size(); i++) {
-		cout << right << "Onyx: " << nobleField[i].getOnyxCost() << setw(25);
-	}
-	cout << endl << setw(0);
-
-	for (int i = 0; i < nobleField.size(); i++) {
-		cout << right << "VP: " << nobleField[i].getVpValue() << setw(25);
-	}
-
-	//show card placement on the field
+	//show card placement # on the field
 	cout << setw(0) << endl << endl;
 	for (int i = 0; i < fieldOne.size(); i++) {
 		cout << "Card " << i + 1 << setw(25);
 	}
+	cout << endl << endl;
+
+	//display how many gems are left in each "deck"
+	cout << "//////////////////////////////////Gems////////////////////////////////////////////////////////////" << endl;
+	cout << "Ruby: " << rubyDeck.size() << endl;
+	cout << "Saphire: " << saphireDeck.size() << endl;
+	cout << "Diamond: " << diamondDeck.size() << endl;
+	cout << "Emerald: " << emeraldDeck.size() << endl;
+	cout << "Onyx: " << onyxDeck.size() << endl;
 
 	//get player 1's name
 	cout << endl << endl << "Player 1 please enter your name: " << endl;
 	getline(cin, p1Name);
 	player1.setName(p1Name);
-
+	
 	//get player 2's name
 	cout << endl << "Player 2 please enter your name: " << endl;
 	getline(cin, p2Name);
@@ -623,14 +647,31 @@ int main() {
 		cout << "2. Take 2 gems of the same color." << endl;
 		cout << "3. Reserve 1 card and take 1 wild token." << endl;
 		cout << "4. Purchase 1 face-up card." << endl;
+		cout << "Choice: ";
 		cin >> choice;
 
 		switch (choice) {
 		//choice 1, selecting 3 gems of different colors.
 		case 1:
-			cout << player1.getName() << " please select your First gem: ";
-			cout << endl << player1.getName() << " please select your Second gem: ";
-			cout << endl << player1.getName() << " please select your Third gem: ";
+			//enter number of first gem
+			//do {
+				cout << player1.getName() << " please select a gem: " << endl;
+				cout << "1: Ruby" << endl;
+				cout << "2: Saphire" << endl;
+				cout << "3: Diamond" << endl;
+				cout << "4: Emerald" << endl;
+				cout << "5: Onyx" << endl;
+				cin >> gem;
+				if (gem == 1) {
+					player1.setTokenHand(rubyDeck[rubyDeck.size() - 1]);
+					rubyDeck.pop_back();
+				}
+				cout << player1.getHandSize();
+				gemCounter++;
+			//} while (gemCounter != 3);
+
+			//cout << endl << player1.getName() << " please enter your Second gem: ";
+			//cout << endl << player1.getName() << " please enter your Third gem: ";
 		}
 
 	} while (player1.getVpTotal() < 15 && player2.getVpTotal() < 15);

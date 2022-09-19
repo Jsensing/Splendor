@@ -1,31 +1,31 @@
 ﻿  Splendor.cpp
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(248,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(457,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(462,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(467,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(472,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(477,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(482,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(487,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(496,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(492,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(501,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(506,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(511,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(516,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(521,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(526,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(535,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(531,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(540,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(545,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(550,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(555,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(560,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(565,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(574,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(570,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(579,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(584,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(589,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(594,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(599,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(605,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(604,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(610,20): warning C4018: '<': signed/unsigned mismatch
   Splendor.vcxproj -> C:\Users\wrait\OneDrive\Desktop\Splendor\Debug\Splendor.exe
