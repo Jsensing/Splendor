@@ -172,7 +172,7 @@ public:
 		tokenHand.push_back(gem);
 	}
 
-	int getHandSize() {
+	int getTokenHandSize() {
 		return tokenHand.size();
 	}
 
@@ -264,8 +264,10 @@ int main() {
 	Player player2;
 	int choice;
 
-	//Select 3 gems choices
-	int gem;
+	//case 1: Select 3 gems choices
+	int firstGem;
+	int secondGem;
+	int thirdGem;
 	int gemCounter = 0;
 
 	//nobles
@@ -654,21 +656,127 @@ int main() {
 		//choice 1, selecting 3 gems of different colors.
 		case 1:
 			//enter number of first gem
-			//do {
-				cout << player1.getName() << " please select a gem: " << endl;
+			do {
+				cout << endl << player1.getName() << " please select first gem: " << endl;
 				cout << "1: Ruby" << endl;
 				cout << "2: Saphire" << endl;
 				cout << "3: Diamond" << endl;
 				cout << "4: Emerald" << endl;
 				cout << "5: Onyx" << endl;
-				cin >> gem;
-				if (gem == 1) {
+				cout << "Choice: ";
+				cin >> firstGem;
+				if (firstGem == 1) {
 					player1.setTokenHand(rubyDeck[rubyDeck.size() - 1]);
 					rubyDeck.pop_back();
+					gemCounter++;
 				}
-				cout << player1.getHandSize();
-				gemCounter++;
-			//} while (gemCounter != 3);
+				else if (firstGem == 2) {
+					player1.setTokenHand(saphireDeck[saphireDeck.size() - 1]);
+					saphireDeck.pop_back();
+					gemCounter++;
+				}
+				else if (firstGem == 3) {
+					player1.setTokenHand(diamondDeck[diamondDeck.size() - 1]);
+					diamondDeck.pop_back();
+					gemCounter++;
+				}
+				else if (firstGem == 4) {
+					player1.setTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
+					emeraldDeck.pop_back();
+					gemCounter++;
+				}
+				else if (firstGem == 5) {
+					player1.setTokenHand(onyxDeck[onyxDeck.size() - 1]);
+					onyxDeck.pop_back();
+					gemCounter++;
+				}
+				else {
+					cout << "error" << endl;
+				}
+				
+				//enter second number for second gem
+				cout << endl << "Please select second gem: " << endl;
+				cout << "1: Ruby" << endl;
+				cout << "2: Saphire" << endl;
+				cout << "3: Diamond" << endl;
+				cout << "4: Emerald" << endl;
+				cout << "5: Onyx" << endl;
+				cout << "Choice: ";
+				cin >> secondGem;
+				if (secondGem == 1) {
+					player1.setTokenHand(rubyDeck[rubyDeck.size() - 1]);
+					rubyDeck.pop_back();
+					gemCounter++;
+				}
+				else if (secondGem == 2) {
+					player1.setTokenHand(saphireDeck[saphireDeck.size() - 1]);
+					saphireDeck.pop_back();
+					gemCounter++;
+				}
+				else if (secondGem == 3) {
+					player1.setTokenHand(diamondDeck[diamondDeck.size() - 1]);
+					diamondDeck.pop_back();
+					gemCounter++;
+				}
+				else if (secondGem == 4) {
+					player1.setTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
+					emeraldDeck.pop_back();
+					gemCounter++;
+				}
+				else if (secondGem == 5) {
+					player1.setTokenHand(onyxDeck[onyxDeck.size() - 1]);
+					onyxDeck.pop_back();
+					gemCounter++;
+				}
+				else {
+					cout << "error" << endl;
+				}
+
+				//select number for third gem
+				cout << endl << "Please select third gem: " << endl;
+				cout << "1: Ruby" << endl;
+				cout << "2: Saphire" << endl;
+				cout << "3: Diamond" << endl;
+				cout << "4: Emerald" << endl;
+				cout << "5: Onyx" << endl;
+				cout << "Choice: ";
+				cin >> thirdGem;
+				if (thirdGem == 1) {
+					player1.setTokenHand(rubyDeck[rubyDeck.size() - 1]);
+					rubyDeck.pop_back();
+					gemCounter++;
+				}
+				else if (thirdGem == 2) {
+					player1.setTokenHand(saphireDeck[saphireDeck.size() - 1]);
+					saphireDeck.pop_back();
+					gemCounter++;
+				}
+				else if (thirdGem == 3) {
+					player1.setTokenHand(diamondDeck[diamondDeck.size() - 1]);
+					diamondDeck.pop_back();
+					gemCounter++;
+				}
+				else if (thirdGem == 4) {
+					player1.setTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
+					emeraldDeck.pop_back();
+					gemCounter++;
+				}
+				else if (thirdGem == 5) {
+					player1.setTokenHand(onyxDeck[onyxDeck.size() - 1]);
+					onyxDeck.pop_back();
+					gemCounter++;
+				}
+				else {
+					cout << "error" << endl;
+				}
+
+				//print statements to show case 1 is working
+				cout << "player token hand size: " << player1.getTokenHandSize() << endl;
+				cout << "gem counter: " << gemCounter << endl;
+				cout << "Ruby deck: " << rubyDeck.size() << endl;
+				cout << "Emerald deck: " << emeraldDeck.size();
+				
+			} while (gemCounter != 3);
 
 			//cout << endl << player1.getName() << " please enter your Second gem: ";
 			//cout << endl << player1.getName() << " please enter your Third gem: ";
