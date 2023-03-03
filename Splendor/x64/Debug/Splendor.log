@@ -1,4 +1,8 @@
 ﻿  Splendor.cpp
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(176,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(258,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(180,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(188,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(196,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(204,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(212,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\wrait\OneDrive\Desktop\Splendor\Splendor\Splendor.cpp(293,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Splendor.vcxproj -> C:\Users\wrait\OneDrive\Desktop\Splendor\x64\Debug\Splendor.exe

@@ -99,7 +99,11 @@ private:
 	int diamondValue;
 	int emeraldValue;
 	int onyxValue;
-	vector<Token> tokenHand;
+	vector<Token> rubyTokenHand;
+	vector<Token> saphireTokenHand;
+	vector<Token> diamondTokenHand;
+	vector<Token> emeraldTokenHand;
+	vector<Token> onyxTokenHand;
 	vector<Cards> cardsOnField;
 	vector<Cards> reservedCards;
 public:
@@ -168,14 +172,45 @@ public:
 		return vpTotal;
 	}
 
-	void setTokenHand(Token gem) {
-		tokenHand.push_back(gem);
+	void setRubyTokenHand(Token gem) {
+		rubyTokenHand.push_back(gem);
 	}
 
-	int getTokenHandSize() {
-		return tokenHand.size();
+	int getRubyTokenHandSize() {
+		return rubyTokenHand.size();
 	}
 
+	void setSaphireTokenHand(Token gem) {
+		saphireTokenHand.push_back(gem);
+	}
+
+	int getSaphireTokenHand() {
+		return saphireTokenHand.size();
+	}
+
+	void setDiamondTokenHand(Token gem) {
+		diamondTokenHand.push_back(gem);
+	}
+
+	int getDiamondTokenHand() {
+		return diamondTokenHand.size();
+	}
+
+	void setEmeraldTokenHand(Token gem) {
+		emeraldTokenHand.push_back(gem);
+	}
+
+	int getEmeraldTokenHand() {
+		return emeraldTokenHand.size();
+	}
+
+	void setOnyxTokenHand(Token gem) {
+		onyxTokenHand.push_back(gem);
+	}
+
+	int getOnyxTokenHand() {
+		return onyxTokenHand.size();
+	}
 
 };
 
@@ -269,6 +304,9 @@ int main() {
 	int secondGem;
 	int thirdGem;
 	int gemCounter = 0;
+
+	//case 2: select 2 gems of the same color
+	int gemChoice;
 
 	//nobles
 	Noble noble1(3, 3, 0, 3, 0, 3);
@@ -666,34 +704,34 @@ int main() {
 				cout << "Choice: ";
 				cin >> firstGem;
 				if (firstGem == 1) {
-					player1.setTokenHand(rubyDeck[rubyDeck.size() - 1]);
+					player1.setRubyTokenHand(rubyDeck[rubyDeck.size() - 1]);
 					rubyDeck.pop_back();
 					gemCounter++;
 				}
 				else if (firstGem == 2) {
-					player1.setTokenHand(saphireDeck[saphireDeck.size() - 1]);
+					player1.setSaphireTokenHand(saphireDeck[saphireDeck.size() - 1]);
 					saphireDeck.pop_back();
 					gemCounter++;
 				}
 				else if (firstGem == 3) {
-					player1.setTokenHand(diamondDeck[diamondDeck.size() - 1]);
+					player1.setDiamondTokenHand(diamondDeck[diamondDeck.size() - 1]);
 					diamondDeck.pop_back();
 					gemCounter++;
 				}
 				else if (firstGem == 4) {
-					player1.setTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
+					player1.setEmeraldTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
 					emeraldDeck.pop_back();
 					gemCounter++;
 				}
 				else if (firstGem == 5) {
-					player1.setTokenHand(onyxDeck[onyxDeck.size() - 1]);
+					player1.setOnyxTokenHand(onyxDeck[onyxDeck.size() - 1]);
 					onyxDeck.pop_back();
 					gemCounter++;
 				}
 				else {
 					cout << "error" << endl;
 				}
-				
+
 				//enter second number for second gem
 				cout << endl << "Please select second gem: " << endl;
 				cout << "1: Ruby" << endl;
@@ -704,27 +742,27 @@ int main() {
 				cout << "Choice: ";
 				cin >> secondGem;
 				if (secondGem == 1) {
-					player1.setTokenHand(rubyDeck[rubyDeck.size() - 1]);
+					player1.setRubyTokenHand(rubyDeck[rubyDeck.size() - 1]);
 					rubyDeck.pop_back();
 					gemCounter++;
 				}
 				else if (secondGem == 2) {
-					player1.setTokenHand(saphireDeck[saphireDeck.size() - 1]);
+					player1.setSaphireTokenHand(saphireDeck[saphireDeck.size() - 1]);
 					saphireDeck.pop_back();
 					gemCounter++;
 				}
 				else if (secondGem == 3) {
-					player1.setTokenHand(diamondDeck[diamondDeck.size() - 1]);
+					player1.setDiamondTokenHand(diamondDeck[diamondDeck.size() - 1]);
 					diamondDeck.pop_back();
 					gemCounter++;
 				}
 				else if (secondGem == 4) {
-					player1.setTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
+					player1.setEmeraldTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
 					emeraldDeck.pop_back();
 					gemCounter++;
 				}
 				else if (secondGem == 5) {
-					player1.setTokenHand(onyxDeck[onyxDeck.size() - 1]);
+					player1.setOnyxTokenHand(onyxDeck[onyxDeck.size() - 1]);
 					onyxDeck.pop_back();
 					gemCounter++;
 				}
@@ -742,45 +780,61 @@ int main() {
 				cout << "Choice: ";
 				cin >> thirdGem;
 				if (thirdGem == 1) {
-					player1.setTokenHand(rubyDeck[rubyDeck.size() - 1]);
+					player1.setRubyTokenHand(rubyDeck[rubyDeck.size() - 1]);
 					rubyDeck.pop_back();
 					gemCounter++;
 				}
 				else if (thirdGem == 2) {
-					player1.setTokenHand(saphireDeck[saphireDeck.size() - 1]);
+					player1.setSaphireTokenHand(saphireDeck[saphireDeck.size() - 1]);
 					saphireDeck.pop_back();
 					gemCounter++;
 				}
 				else if (thirdGem == 3) {
-					player1.setTokenHand(diamondDeck[diamondDeck.size() - 1]);
+					player1.setDiamondTokenHand(diamondDeck[diamondDeck.size() - 1]);
 					diamondDeck.pop_back();
 					gemCounter++;
 				}
 				else if (thirdGem == 4) {
-					player1.setTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
+					player1.setEmeraldTokenHand(emeraldDeck[emeraldDeck.size() - 1]);
 					emeraldDeck.pop_back();
 					gemCounter++;
 				}
 				else if (thirdGem == 5) {
-					player1.setTokenHand(onyxDeck[onyxDeck.size() - 1]);
+					player1.setOnyxTokenHand(onyxDeck[onyxDeck.size() - 1]);
 					onyxDeck.pop_back();
 					gemCounter++;
 				}
 				else {
 					cout << "error" << endl;
 				}
-
-				//print statements to show case 1 is working
-				cout << "player token hand size: " << player1.getTokenHandSize() << endl;
-				cout << "gem counter: " << gemCounter << endl;
-				cout << "Ruby deck: " << rubyDeck.size() << endl;
-				cout << "Emerald deck: " << emeraldDeck.size();
-				
 			} while (gemCounter != 3);
+			break;
 
-			//cout << endl << player1.getName() << " please enter your Second gem: ";
-			//cout << endl << player1.getName() << " please enter your Third gem: ";
+		//choice 2, selecting 2 gems of the same color.
+		case 2:
+			cout << endl << player1.getName() << " please select a gem: " << endl;
+			cout << "1: Ruby" << endl;
+			cout << "2: Saphire" << endl;
+			cout << "3: Diamond" << endl;
+			cout << "4: Emerald" << endl;
+			cout << "5: Onyx" << endl;
+			cout << "Choice: ";
+			cin >> gemChoice;
+
+			if (gemChoice == 1) {
+				if (rubyDeck.size() <= 2) {
+					cout << "Not enough gems.";
+					break;
+				}
+				else {
+					player1.setRubyTokenHand(rubyDeck[rubyDeck.size() - 1]);
+					player1.setRubyTokenHand(rubyDeck[rubyDeck.size() - 1]);
+					rubyDeck.pop_back();
+					rubyDeck.pop_back();
+				}
+			}
 		}
+
 
 	} while (player1.getVpTotal() < 15 && player2.getVpTotal() < 15);
 }
